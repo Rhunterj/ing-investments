@@ -10,7 +10,6 @@ type Props = {
 }
 
 const Home = ({ data }: Props) => {
-  console.log(data)
   return (
     <div className={styles.container}>
       <Head>
@@ -28,11 +27,10 @@ const Home = ({ data }: Props) => {
 
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch(
-    `https://www.ing.nl/api/securities/web/markets/stockmarkets/AEX`
-  );
-
-  const data = await res.json();
+  const res = await fetch(`http://localhost:3000/stocks/securities/web/markets/stockmarkets/AEX`);
+  console.log(res)
+  const data = JSON.parse((await res.text()).slice(5));
+  
   return { props: { data } };
 }
 
