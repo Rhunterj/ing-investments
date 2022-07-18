@@ -11,11 +11,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   return httpProxyMiddleware(req, res, {
-    target: 'https://www.ing.nl/api/',
+    target: 'https://www.ing.nl/api/securities/web/markets/stockmarkets/AEX',
     changeOrigin: true,
     pathRewrite: [
       {
-        patternStr: '^/stocks',
+        patternStr: '^/api/stocks',
         replaceStr: '/',
       },
     ],

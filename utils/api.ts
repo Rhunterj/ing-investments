@@ -23,7 +23,7 @@ const corsAllowList = [
 
 export const cors = Cors({
   origin: function (origin: any, callback: any) {
-    if (origin && corsAllowList.includes(origin)) {
+    if (!origin || corsAllowList.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
       callback(new Error(`CORS origin not allowed: ${origin}`));
