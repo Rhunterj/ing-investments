@@ -8,16 +8,20 @@ type Props = {
 const StockItems: React.FC<Props> = ({ stockItems }) => {
   return (
     <table>
-      <tr>
-        <th>Name</th>
-        <th>Course</th>
-        <th>Difference</th>
-        <th>Difference in percentage</th>
-        <th>Time</th>
-      </tr>
-      {stockItems.map((stockItem) => {
-        return <StockItem stockItem={stockItem} />
-      })}
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Difference</th>
+          <th>Difference in percentage</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {stockItems.map((item: StockItemType) => {
+          return <StockItem stockItem={item} key={item.uid} />
+        })}
+      </tbody>
     </table>
   );
 };
