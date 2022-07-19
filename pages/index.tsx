@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import StockItems from '../components/StockItems/StockItems'
 import * as S from '../styles/Home.styled';
-import { usePrevious } from '../utils/usePrevious';
 import _ from "lodash";
 
 type Props = {
@@ -55,6 +54,8 @@ const Home = ({ data }: Props) => {
       </Head>
 
       <S.Main>
+        <h1>AEX</h1>
+        <h2>Alle instrumenten in de AEX</h2>
         <StockItems stockItems={stockInfo.instruments} />
       </S.Main>
     </S.Container>

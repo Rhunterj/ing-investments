@@ -1,5 +1,6 @@
 import React from "react";
 import StockItem from "../StockItem/StockItem";
+import * as S from '../../styles/StockItems.styled';
 
 type Props = {
   stockItems: []
@@ -7,13 +8,13 @@ type Props = {
 
 const StockItems: React.FC<Props> = ({ stockItems }) => {
   return (
-    <table>
+    <S.Table>
       <thead>
         <tr>
           <th>Name</th>
           <th>Course</th>
           <th>Difference</th>
-          <th>Difference in percentage</th>
+          <th>Difference in %</th>
           <th>Time</th>
         </tr>
       </thead>
@@ -22,7 +23,7 @@ const StockItems: React.FC<Props> = ({ stockItems }) => {
           return <StockItem stockItem={item} key={item.uid} />
         })}
       </tbody>
-    </table>
+    </S.Table>
   );
 };
 
