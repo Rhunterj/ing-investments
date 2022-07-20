@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
-  
+  max-width: 768px;
+
+
   thead {
     display: none;
   }
@@ -19,6 +21,10 @@ export const Table = styled.table`
     
     th:first-child{
       text-align: left;
+    }
+
+    th:nth-child(4){
+      text-align: center;
     }
   }
 `
