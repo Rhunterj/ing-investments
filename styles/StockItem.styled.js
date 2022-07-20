@@ -1,7 +1,18 @@
 import styled, { keyframes } from 'styled-components';
 
+const highlight = keyframes`
+  0% {background:  #F5F5F5;}
+  40% {background:  #F5F5F5;}
+  100% {background: none;}
+  } 
+`
+
 export const Row = styled.tr`
-  animation: 0.2s ${props => props.hasChanged ? highlight : ''} ease-in-out;
+  animation: ${props =>
+    props.animate &&
+    css`
+      ${highlight} 1s;
+  `};
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
   &:first-child {
@@ -55,17 +66,4 @@ export const Cell = styled.td`
         width: 25%;
       }
     }
-`
-
-const highlight = keyframes`
-    0% {
-      color: red;
-    }
-    30% {
-      color: blue;
-    }
-    100% {
-      color: none;
-    }
-  } 
 `
