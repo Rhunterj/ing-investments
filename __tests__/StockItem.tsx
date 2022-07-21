@@ -1,6 +1,5 @@
 
 import { render, screen } from '@testing-library/react'
-import { act } from 'react-dom/test-utils';
 import StockItem from '../components/StockItem/StockItem'
 import { StockItemMock } from './__mocks__/StockItemMock';
 

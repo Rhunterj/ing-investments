@@ -1,6 +1,5 @@
 
 import { render, screen } from '@testing-library/react'
-import { act } from 'react-dom/test-utils';
 import StockDetailPage from '../pages/details/[slug]'
 import { StockItemMock } from './__mocks__/StockItemMock';
 
@@ -17,10 +16,8 @@ describe('DetailPage', () => {
 
   
   it('renders without data', () => {
-    act(() => {
-      render(<StockDetailPage pageData={undefined}/>)
-    })
-
+    render(<StockDetailPage pageData={undefined}/>)
+    
     const heading = screen.getByText('There is no data available for this stock')
 
     expect(heading).toBeInTheDocument()
