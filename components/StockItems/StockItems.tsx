@@ -1,6 +1,7 @@
 import React from "react";
 import StockItem from "../StockItem/StockItem";
 import * as S from '../../styles/StockItems.styled';
+import { StockDetailType, StockItemType } from "../../utils/types";
 
 type Props = {
   stockItems: StockDetailType[]

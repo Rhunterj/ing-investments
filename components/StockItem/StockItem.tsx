@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 import slugify from 'slugify';
 import * as S from '../../styles/StockItem.styled';
+import { StockItemType } from '../../utils/types';
 import { usePrevious } from '../../utils/usePrevious';
 
 interface StockItemProps {

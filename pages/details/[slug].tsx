@@ -2,6 +2,7 @@ import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import * as S from '../../styles/StockDetailPage.styled';
+import { StockDetailType } from "../../utils/types";
 
 type StockDetailProps = {
   pageData?: StockDetailType

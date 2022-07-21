@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import StockItems from '../components/StockItems/StockItems'
 import * as S from '../styles/Home.styled';
 import _ from "lodash";
+import { StockItemsType } from '../utils/types';
 
 type Props = {
   data?: StockItemsType
@@ -35,8 +36,8 @@ const Home = ({ data }: Props) => {
 
   useEffect(() => { 
     subscribe();
-  }, []);
-
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  
   if (error || !data) {
     return <div> There was an issue collecting the data</div>
   }

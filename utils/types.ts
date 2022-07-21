@@ -1,11 +1,11 @@
 
-type PriceType = {
+export type PriceType = {
   value: number;
   unit: string;
   percent: boolean;
 }
 
-type StockItemType = {
+export type StockItemType = {
   uid?: string
   name: string;
   time: string;
@@ -15,7 +15,7 @@ type StockItemType = {
   key?: string;
 }
 
-type StockDetailType = {
+export type StockDetailType = {
   closePrice: PriceType,
   currency: string,
   currentPrice: PriceType,
@@ -32,7 +32,7 @@ type StockDetailType = {
   time: string,
 }
 
-type StockItemsType = {
+export type StockItemsType = {
   indexInstrument: {},
   instruments: StockDetailType[]
 }
