@@ -4,12 +4,6 @@ import { act } from 'react-dom/test-utils';
 import StockDetailPage from '../pages/details/[slug]'
 import { StockItemMock } from './__mocks__/StockItemMock';
 
-global.fetch = jest.fn(() =>
-  Promise.resolve({
-    json: () => Promise.resolve({ StockItemMock }),
-  })
-) as jest.Mock;
-
 describe('DetailPage', () => {
   it('renders a heading', () => {
     render(<StockDetailPage pageData={StockItemMock}/>);
