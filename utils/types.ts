@@ -6,13 +6,13 @@ type PriceType = {
 }
 
 type StockItemType = {
-  uid: string
+  uid?: string
   name: string;
   time: string;
   priceMutation: number;
   currentPrice: PriceType;
   closePrice: PriceType;
-  key: string;
+  key?: string;
 }
 
 type StockDetailType = {
@@ -30,4 +30,9 @@ type StockDetailType = {
   priceMutation: number,
   symbol: string,
   time: string,
+}
+
+type StockItemsType = {
+  indexInstrument: {},
+  instruments: StockDetailType[]
 }

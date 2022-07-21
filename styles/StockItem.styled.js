@@ -1,18 +1,10 @@
-import styled, { keyframes } from 'styled-components';
-
-const highlight = keyframes`
-  0% {background:  #F5F5F5;}
-  40% {background:  #F5F5F5;}
-  100% {background: none;}
-  } 
-`
+import styled from 'styled-components';
 
 export const Row = styled.tr`
-  animation: ${props =>
-    props.animate &&
-    css`
-      ${highlight} 1s;
-  `};
+  &.changeDetected {
+   background-color: #F5F5F5;
+  }
+
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
   &:first-child {

@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home render Home unchanged 1`] = `
+<div>
+  <div
+    class="sc-43a7f46e-0 eJvKtc"
+  >
+    <main
+      class="sc-43a7f46e-1 eqbKnS"
+    >
+      <h1>
+        AEX
+      </h1>
+      <h2>
+        Alle instrumenten in de AEX
+      </h2>
+      <table
+        class="sc-25074236-0 dGCCs"
+      >
+        <thead>
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Course
+            </th>
+            <th>
+              Difference
+            </th>
+            <th>
+              Difference in %
+            </th>
+            <th>
+              Time
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="sc-d58ab916-0 iVYirQ"
+          >
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              <a
+                href="/details/Adyen?name=Adyen"
+              >
+                Adyen
+              </a>
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              1622.365
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              +26.16
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              +1.64
+              %
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              10:38
+            </td>
+          </tr>
+          <tr
+            class="sc-d58ab916-0 eoKHbs"
+          >
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              <a
+                href="/details/Aegon?name=Aegon"
+              >
+                Aegon
+              </a>
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              4.043
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              -0.04
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              -1.13
+              %
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              10:38
+            </td>
+          </tr>
+          <tr
+            class="sc-d58ab916-0 iVYirQ"
+          >
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              <a
+                href="/details/Ahold-Delhaize?name=Ahold+Delhaize"
+              >
+                Ahold Delhaize
+              </a>
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              26.25
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              +0.13
+               EUR
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              +0.48
+              %
+            </td>
+            <td
+              class="sc-d58ab916-1 iuRrYV"
+            >
+              10:38
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</div>
+`;

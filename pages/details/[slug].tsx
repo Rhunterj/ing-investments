@@ -4,7 +4,7 @@ import Link from "next/link";
 import * as S from '../../styles/StockDetailPage.styled';
 
 type StockDetailProps = {
-  pageData: StockDetailType
+  pageData?: StockDetailType
 }
 const StockDetailPage = ({ pageData }: StockDetailProps) => {
   if (!pageData) {

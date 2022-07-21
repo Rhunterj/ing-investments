@@ -42,6 +42,7 @@ export const TableBody = styled.tbody`
   @media screen and (min-width: 768px) {
     width: calc(50% - 10px);
     display: inline-block;
+    vertical-align: top;
     
     &:first-child {
       margin-right: 5px

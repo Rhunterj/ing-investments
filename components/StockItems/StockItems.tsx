@@ -3,7 +3,7 @@ import StockItem from "../StockItem/StockItem";
 import * as S from '../../styles/StockItems.styled';
 
 type Props = {
-  stockItems: []
+  stockItems: StockDetailType[]
 }
 
 const StockItems: React.FC<Props> = ({ stockItems }) => {

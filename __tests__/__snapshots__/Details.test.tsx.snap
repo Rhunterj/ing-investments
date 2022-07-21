@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailPage render Details unchanged 1`] = `
+<div>
+  <div
+    class="sc-bd49d5db-0 havRRg"
+  >
+    <main
+      class="sc-bd49d5db-1 iaySbd"
+    >
+      <h1>
+        Adyen
+      </h1>
+      <a
+        href="/"
+      >
+        Back to overview
+      </a>
+      <table
+        class="sc-bd49d5db-2 jfWGer"
+      >
+        <tbody
+          class="sc-bd49d5db-3 jjwxsF"
+        >
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Symbol
+              </b>
+               
+              ADY
+            </td>
+          </tr>
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                CurrentValue
+              </b>
+               
+              1622.365
+            </td>
+          </tr>
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Net change
+              </b>
+               
+              +26.165
+              /
+              +1.639
+            </td>
+          </tr>
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Isin
+              </b>
+               
+              NL0012969182
+            </td>
+          </tr>
+        </tbody>
+        <tbody
+          class="sc-bd49d5db-3 jjwxsF"
+        >
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Previous close
+              </b>
+               
+              1596.2
+            </td>
+          </tr>
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Highest price
+              </b>
+               
+              1660.84
+            </td>
+          </tr>
+          <tr
+            class="sc-bd49d5db-4 aSzXH"
+          >
+            <td
+              class="sc-bd49d5db-5 bMaHet"
+            >
+              <b
+                class="sc-bd49d5db-6 bMsBft"
+              >
+                Lowest price
+              </b>
+               
+              1593.3
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</div>
+`;

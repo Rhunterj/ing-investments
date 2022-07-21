@@ -6,9 +6,7 @@ import * as S from '../styles/Home.styled';
 import _ from "lodash";
 
 type Props = {
-  data: {
-    instruments: []
-  }
+  data?: StockItemsType
 }
 
 const Home = ({ data }: Props) => {
@@ -39,7 +37,7 @@ const Home = ({ data }: Props) => {
     subscribe();
   }, []);
 
-  if (error && !data) {
+  if (error || !data) {
     return <div> There was an issue collecting the data</div>
   }
 
