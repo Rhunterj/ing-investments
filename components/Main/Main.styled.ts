@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  padding: 0 2rem;
-`
-
 export const Main = styled.main`
   min-height: 100vh;
   padding: 1rem 0;
@@ -19,5 +15,10 @@ export const Main = styled.main`
 
   h2 {
     margin-top: 0;
+  }
+
+  a {
+    text-decoration: underline;
+    color: rgb(0, 0, 238);
   }
 `

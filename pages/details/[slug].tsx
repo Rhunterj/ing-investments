@@ -1,10 +1,11 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import * as S from '../../layouts/StockDetailsLayout.styled';
 import { StockDetailType } from "../../interaces/stock.interface";
 import DetailsTable from '../../components/DetailsTable/DetailsTable';
 import { FC } from "react";
+import Main from "../../components/Main/Main";
+import Container from "../../components/Container/Container";
 
 interface StockDetailProps {
   pageData?: StockDetailType
@@ -18,18 +19,18 @@ const StockDetailPage: FC<StockDetailProps> = ({ pageData }) => {
   const { name } = pageData;
 
   return (
-    <S.Container>
+    <Container>
       <Head>
         <title>{name} details</title>
         <meta name="description" content={`${name} details`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <S.Main>
+      <Main>
         <h1>{name}</h1>
         <Link href="/">Back to overview</Link>
         <DetailsTable stockItem={pageData} />
-      </S.Main>
-    </S.Container>
+      </Main>
+    </Container>
   );
 }
 

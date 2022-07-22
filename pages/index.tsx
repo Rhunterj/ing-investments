@@ -2,9 +2,10 @@ import type { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import { FC, useEffect, useState } from 'react'
 import StockItems from '../components/StockItems/StockItems'
-import * as S from '../layouts/IndexLayout.styled.';
 import _ from "lodash";
 import { StockItemsType } from '../interaces/stock.interface';
+import Main from '../components/Main/Main';
+import Container from '../components/Container/Container';
 
 interface OverviewPageProps {
   data?: StockItemsType
@@ -45,19 +46,19 @@ const Home: FC<OverviewPageProps> = ({ data }) => {
   const stockInfo = stockData ? stockData : data;
 
   return (
-    <S.Container>
+    <Container>
       <Head>
         <title>Ing stock information</title>
         <meta name="description" content="Ing stock information" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <S.Main>
+      <Main>
         <h1>AEX</h1>
         <h2>Alle instrumenten in de AEX</h2>
         <StockItems stockItems={stockInfo.instruments} />
-      </S.Main>
-    </S.Container>
+      </Main>
+    </Container>
   )
 }
 
