@@ -1,15 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import StockItem from "../StockItem/StockItem";
-import * as S from '../../styles/StockItems.styled';
-import { StockDetailType, StockItemType } from "../../utils/types";
+import * as S from './StockItems.styled';
+import { StockDetailType, StockItemType } from "../../interaces/stock.interface";
 
-type Props = {
+interface StockItemsProps {
   stockItems: StockDetailType[]
 }
 
-const StockItems: React.FC<Props> = ({ stockItems }) => {
+const StockItems: FC<StockItemsProps> = ({ stockItems }) => {
   return (
-    <S.Table>
+    <S.StockItemsTable>
       <thead>
         <tr>
           <th>Name</th>
@@ -24,7 +24,7 @@ const StockItems: React.FC<Props> = ({ stockItems }) => {
           return <StockItem stockItem={item} key={item.uid} />
         })}
       </tbody>
-    </S.Table>
+    </S.StockItemsTable>
   );
 };
 

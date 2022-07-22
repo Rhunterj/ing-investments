@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import slugify from 'slugify';
-import * as S from '../../styles/StockItem.styled';
-import { StockItemType } from '../../utils/types';
+import * as S from './StockItem.styled';
+import { StockItemType } from '../../interaces/stock.interface';
 import { usePrevious } from '../../utils/usePrevious';
 
 interface StockItemProps {
@@ -20,13 +20,13 @@ const StockItem: FC<StockItemProps> = ({ stockItem }) => {
   const profit = courseStatus ? '+' : '';
 
   return (
-    <S.Row className={`${hasChanged ? 'changeDetected' : ''}`} courseStatus={courseStatus} changeDetected={hasChanged} key={uid}>
-      <S.Cell><Link href={{ pathname: `/details/${slugify(name)}`, query: { name: name}}}>{name}</Link></S.Cell>
-      <S.Cell>{currentPrice.value} EUR</S.Cell>
-      <S.Cell>{profit + differenceInPrice.toFixed(2)} EUR</S.Cell>
-      <S.Cell>{profit + priceMutation.toFixed(2)}%</S.Cell>
-      <S.Cell>{normalizedTime}</S.Cell>
-    </S.Row>
+    <S.StockItemRow className={`${hasChanged ? 'changeDetected' : ''}`} courseStatus={courseStatus} key={uid}>
+      <S.StockItemCell><Link href={{ pathname: `/details/${slugify(name)}`, query: { name: name}}}>{name}</Link></S.StockItemCell>
+      <S.StockItemCell>{currentPrice.value} EUR</S.StockItemCell>
+      <S.StockItemCell>{profit + differenceInPrice.toFixed(2)} EUR</S.StockItemCell>
+      <S.StockItemCell>{profit + priceMutation.toFixed(2)}%</S.StockItemCell>
+      <S.StockItemCell>{normalizedTime}</S.StockItemCell>
+    </S.StockItemRow>
   );
 };
 

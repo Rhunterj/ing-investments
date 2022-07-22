@@ -1,21 +1,21 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import * as S from '../../styles/StockDetailPage.styled';
-import { StockDetailType } from "../../utils/types";
+import * as S from '../../layouts/StockDetailsLayout.styled';
+import { StockDetailType } from "../../interaces/stock.interface";
+import DetailsTable from '../../components/DetailsTable/DetailsTable';
+import { FC } from "react";
 
-type StockDetailProps = {
+interface StockDetailProps {
   pageData?: StockDetailType
 }
-const StockDetailPage = ({ pageData }: StockDetailProps) => {
+
+const StockDetailPage: FC<StockDetailProps> = ({ pageData }) => {
   if (!pageData) {
     return <div>There is no data available for this stock</div>
   };
 
-  const { closePrice, currentPrice, name, priceMutation, lowPrice, highPrice, isin, symbol } = pageData;
-  const differenceInPrice = currentPrice.value - closePrice.value;
-  const courseStatus = priceMutation > 0;
-  const profit = courseStatus ? '+' : '';
+  const { name } = pageData;
 
   return (
     <S.Container>
@@ -27,35 +27,7 @@ const StockDetailPage = ({ pageData }: StockDetailProps) => {
       <S.Main>
         <h1>{name}</h1>
         <Link href="/">Back to overview</Link>
-        <S.Table courseStatus={courseStatus}>
-          <S.TableBody>
-            <S.Row>
-              <S.Cell><S.Bold>Symbol</S.Bold> {symbol}</S.Cell>
-            </S.Row>
-            <S.Row>
-              <S.Cell><S.Bold>CurrentValue</S.Bold> {currentPrice.value}</S.Cell>
-            </S.Row>
-            <S.Row>
-              <S.Cell><S.Bold>Net change</S.Bold> {profit + differenceInPrice.toFixed(3)}/{profit + priceMutation.toFixed(3)}</S.Cell>
-              </S.Row>
-            <S.Row>
-              <S.Cell><S.Bold>Isin</S.Bold> {isin}</S.Cell>
-            </S.Row>
-          </S.TableBody>
-
-          <S.TableBody>
-            <S.Row>
-              <S.Cell><S.Bold>Previous close</S.Bold> {closePrice.value}</S.Cell>
-            </S.Row>
-            <S.Row>
-              <S.Cell>
-                <S.Bold>Highest price</S.Bold> {highPrice.value}</S.Cell>
-              </S.Row>
-            <S.Row>
-              <S.Cell><S.Bold>Lowest price</S.Bold> {lowPrice.value}</S.Cell>
-            </S.Row>
-          </S.TableBody>
-        </S.Table>
+        <DetailsTable stockItem={pageData} />
       </S.Main>
     </S.Container>
   );

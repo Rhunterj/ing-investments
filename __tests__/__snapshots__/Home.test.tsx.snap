@@ -15,7 +15,7 @@ exports[`Home render Home unchanged 1`] = `
         Alle instrumenten in de AEX
       </h2>
       <table
-        class="sc-25074236-0 dGCCs"
+        class="sc-821e15d8-0 Eedrd"
       >
         <thead>
           <tr>
@@ -38,10 +38,10 @@ exports[`Home render Home unchanged 1`] = `
         </thead>
         <tbody>
           <tr
-            class="sc-d58ab916-0 iVYirQ"
+            class="sc-104b807a-0 ejZdDV"
           >
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               <a
                 href="/details/Adyen?name=Adyen"
@@ -50,34 +50,34 @@ exports[`Home render Home unchanged 1`] = `
               </a>
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               1622.365
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               +26.16
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               +1.64
               %
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               10:38
             </td>
           </tr>
           <tr
-            class="sc-d58ab916-0 eoKHbs"
+            class="sc-104b807a-0 gzYzbh"
           >
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               <a
                 href="/details/Aegon?name=Aegon"
@@ -86,34 +86,34 @@ exports[`Home render Home unchanged 1`] = `
               </a>
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               4.043
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               -0.04
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               -1.13
               %
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               10:38
             </td>
           </tr>
           <tr
-            class="sc-d58ab916-0 iVYirQ"
+            class="sc-104b807a-0 ejZdDV"
           >
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               <a
                 href="/details/Ahold-Delhaize?name=Ahold+Delhaize"
@@ -122,25 +122,25 @@ exports[`Home render Home unchanged 1`] = `
               </a>
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               26.25
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               +0.13
                EUR
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               +0.48
               %
             </td>
             <td
-              class="sc-d58ab916-1 iuRrYV"
+              class="sc-104b807a-1 ucnII"
             >
               10:38
             </td>

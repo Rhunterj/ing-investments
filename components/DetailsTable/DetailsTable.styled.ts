@@ -1,33 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div`
-  padding: 0 2rem;
-`
-
-export const Main = styled.main`
-  min-height: 100vh;
-  padding: 1rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1, h2 {
-    color: rgb(255, 98, 0);
-  }
-
-  h2 {
-    margin-top: 0;
-  }
-
-  a {
-    text-decoration: underline;
-    color: rgb(0, 0, 238);
-  }
-`
-
-export const Table = styled.table`
+export const DetailsTable = styled.table<{ courseStatus: boolean}>`
   border-collapse: collapse;
   width: 100%;
   max-width: 768px;
@@ -38,7 +11,7 @@ export const Table = styled.table`
   }
 `
 
-export const TableBody = styled.tbody`
+export const DetailsTableBody = styled.tbody`
   @media screen and (min-width: 768px) {
     width: calc(50% - 10px);
     display: inline-block;
@@ -55,7 +28,7 @@ export const TableBody = styled.tbody`
   }
 `
 
-export const Row = styled.tr`
+export const DetailsRow = styled.tr`
   border-bottom: 1px solid rgba(0,0,0,0.1);
   display: block;
   line-height: 32px;
@@ -66,12 +39,12 @@ export const Row = styled.tr`
   }
 `
 
-export const Cell = styled.td`
+export const DetailsCell = styled.td`
   width: 100%;
   display: flex;
   justify-content: space-between
 `
 
-export const Bold = styled.b`
+export const DetailsBold = styled.b`
   color: black;
 `

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { RowType } from '../../interaces/stock.interface';
 
-export const Row = styled.tr`
+export const StockItemRow = styled.tr<RowType>`
   &.changeDetected {
    background-color: #F5F5F5;
   }
@@ -20,7 +21,7 @@ export const Row = styled.tr`
   }
 `
 
-export const Cell = styled.td`
+export const StockItemCell = styled.td`
     width: 50%;
     display: inline-block;
 

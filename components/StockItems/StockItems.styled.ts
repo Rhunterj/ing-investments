@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Table = styled.table`
+export const StockItemsTable = styled.table`
   width: 100%;
   border-collapse: collapse;
   max-width: 768px;

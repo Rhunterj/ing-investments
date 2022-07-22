@@ -3,10 +3,10 @@
 exports[`DetailPage render Details unchanged 1`] = `
 <div>
   <div
-    class="sc-bd49d5db-0 havRRg"
+    class="sc-b944e6a-0 hKeHt"
   >
     <main
-      class="sc-bd49d5db-1 iaySbd"
+      class="sc-b944e6a-1 eZynyY"
     >
       <h1>
         Adyen
@@ -17,19 +17,19 @@ exports[`DetailPage render Details unchanged 1`] = `
         Back to overview
       </a>
       <table
-        class="sc-bd49d5db-2 jfWGer"
+        class="sc-ff8b6f11-0 hISlOf"
       >
         <tbody
-          class="sc-bd49d5db-3 jjwxsF"
+          class="sc-ff8b6f11-1 iPdmmt"
         >
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Symbol
               </b>
@@ -38,13 +38,13 @@ exports[`DetailPage render Details unchanged 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 CurrentValue
               </b>
@@ -53,13 +53,13 @@ exports[`DetailPage render Details unchanged 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Net change
               </b>
@@ -70,13 +70,13 @@ exports[`DetailPage render Details unchanged 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Isin
               </b>
@@ -86,16 +86,16 @@ exports[`DetailPage render Details unchanged 1`] = `
           </tr>
         </tbody>
         <tbody
-          class="sc-bd49d5db-3 jjwxsF"
+          class="sc-ff8b6f11-1 iPdmmt"
         >
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Previous close
               </b>
@@ -104,13 +104,13 @@ exports[`DetailPage render Details unchanged 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Highest price
               </b>
@@ -119,13 +119,13 @@ exports[`DetailPage render Details unchanged 1`] = `
             </td>
           </tr>
           <tr
-            class="sc-bd49d5db-4 aSzXH"
+            class="sc-ff8b6f11-2 VICmL"
           >
             <td
-              class="sc-bd49d5db-5 bMaHet"
+              class="sc-ff8b6f11-3 eupGeZ"
             >
               <b
-                class="sc-bd49d5db-6 bMsBft"
+                class="sc-ff8b6f11-4 lbZLaJ"
               >
                 Lowest price
               </b>

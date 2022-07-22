@@ -1,11 +1,11 @@
 
-export type PriceType = {
+export interface PriceType {
   value: number;
   unit: string;
   percent: boolean;
 }
 
-export type StockItemType = {
+export interface StockItemType {
   uid?: string
   name: string;
   time: string;
@@ -15,7 +15,7 @@ export type StockItemType = {
   key?: string;
 }
 
-export type StockDetailType = {
+export interface StockDetailType {
   closePrice: PriceType,
   currency: string,
   currentPrice: PriceType,
@@ -32,7 +32,11 @@ export type StockDetailType = {
   time: string,
 }
 
-export type StockItemsType = {
+export interface StockItemsType {
   indexInstrument: {},
   instruments: StockDetailType[]
+}
+
+export interface RowType {
+  courseStatus: boolean
 }

@@ -1,16 +1,16 @@
 import type { GetServerSideProps } from 'next'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import StockItems from '../components/StockItems/StockItems'
-import * as S from '../styles/Home.styled';
+import * as S from '../layouts/IndexLayout.styled.';
 import _ from "lodash";
-import { StockItemsType } from '../utils/types';
+import { StockItemsType } from '../interaces/stock.interface';
 
-type Props = {
+interface OverviewPageProps {
   data?: StockItemsType
 }
 
-const Home = ({ data }: Props) => {
+const Home: FC<OverviewPageProps> = ({ data }) => {
   const [stockData, setStockData] = useState(data);
   const [error, setError] = useState<boolean>(false);
 
