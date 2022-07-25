@@ -2,7 +2,7 @@ import type { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import { FC, useEffect, useState } from 'react'
 import StockItems from '../components/StockItems/StockItems'
-import _ from "lodash";
+import { isEqual } from "lodash";
 import { StockItemsType } from '../interaces/stock.interface';
 import Main from '../components/Main/Main';
 import Container from '../components/Container/Container';
@@ -26,11 +26,11 @@ const Home: FC<OverviewPageProps> = ({ data }) => {
       await subscribe();
     } else {
       const newData = JSON.parse((await res.text()).slice(5));
-
-      if (!_.isEqual(stockData, newData)) {
+      if (!isEqual(stockData, newData)) {
         setStockData(newData);
       }
       
+      setError(false)
       await subscribe();
     }
   }
